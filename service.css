@@ -1,0 +1,99 @@
+/* General styles for services section */
+.service-card {
+
+    overflow: hidden; /* To ensure no overflow from the image */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.service-card img {
+    width: 50px; /* Adjust icon size */
+    margin-bottom: 15px;
+}
+
+.service-card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.service-card button.shop-btn {
+    background-color: #50d2c2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.service-card button.shop-btn:hover {
+    background-color: #4caf50;
+    transform: scale(1.05);
+}
+
+/* Hover effect for the cards */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.card-btn {
+    width: 140px;
+    height: 50px;
+    background-color:green; /* Default background color */
+    color: white; /* Default text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px; /* Align text vertically */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #50d2c2; /* Background color on hover */
+    color: #212529; /* Text color on hover */
+    transform: scale(1.1); /* Slightly increase button size on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+
+/* Responsive design: For smaller screens, stack the cards */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%; /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%; /* One card per row on extra small screens */
+    }
+}

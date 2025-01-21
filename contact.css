@@ -1,0 +1,63 @@
+/* Contact Section Styles */
+#contact {
+    background-color: black; /* Black background for the section */
+}
+
+.contact-form-container {
+    background-color: black; /* Dark background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%; /* Form will take up 50% of the width */
+    margin: 0 auto; /* Center the form */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #e74c3c; /* Red border for the inputs */
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #333; /* Dark background for the inputs */
+    color: #fff; /* White text for inputs */
+}
+
+.form-control::placeholder {
+    color: white; /* White placeholder text */
+}
+
+.form-control:focus {
+    background-color: #444; /* Darker background when focused */
+    border-color: #e74c3c; /* Red border on focus */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); /* Red shadow on focus */
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Red button color */
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 90%; /* Form will take up more space on smaller screens */
+    }
+}

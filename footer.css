@@ -1,0 +1,43 @@
+/* Footer Styles */
+.footer {
+    background: linear-gradient(90deg, #343a40, #50d2c2); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* For positioning the home icon */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Ensure width and height are equal for a perfect circle */
+    height: 50px; /* Ensure width and height are equal for a perfect circle */
+    font-size: 24px; /* Size of the icon */
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 50%; /* This makes it a circle */
+    display: flex;
+    align-items: center; /* Centering icon vertically */
+    justify-content: center; /* Centering icon horizontally */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #28a745; /* Change background color on hover */
+    transform: scale(1.1); /* Slight scale-up effect */
+}
+
+
+/* Smooth Scroll to Top */
+html {
+    scroll-behavior: smooth; /* Smooth scroll */
+}
